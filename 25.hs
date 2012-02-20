@@ -7,4 +7,4 @@ fib2 n
  where (a,b) = fib2 (n `div` 2 - 1)
        c     = a + b
 fib1 n = fib (n - 1)
---sum [fib x | x <- [1..33], fib x `mod` 2 == 0]
+head [x| x <- [1..], length (show (fib1 x)) > 999]
